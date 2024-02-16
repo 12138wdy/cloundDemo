@@ -20,4 +20,23 @@ public class OrderController {
         // 根据id查询订单并返回
         return orderService.queryOrderById(orderId);
     }
+
+    @GetMapping("/query")
+    public String query(){
+        orderService.queryGoods();
+        System.out.println("查询订单");
+        return "查询订单成功";
+    }
+
+    @GetMapping("/save")
+    public String save(){
+        orderService.queryGoods();
+        System.out.println("新增订单");
+        return "新增订单成功";
+    }
+
+    @GetMapping("/update")
+    public String update(){
+        return "更新订单成功";
+    }
 }

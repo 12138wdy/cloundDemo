@@ -18,6 +18,7 @@ spring:
     sentinel:
       transport:
         dashboard: localhost:8080
+      web-context-unify: false
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
